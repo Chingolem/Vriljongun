@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🚀 Vril Jong Un — The Legend of Discord 🚀</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             background: #0a0a0f;
@@ -19,22 +25,33 @@
         /* ===== STARS BACKGROUND ===== */
         .stars {
             position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
             z-index: 0;
         }
+
         .stars span {
             position: absolute;
-            width: 2px; height: 2px;
+            width: 2px;
+            height: 2px;
             background: #fff;
             border-radius: 50%;
             animation: twinkle 3s infinite alternate;
         }
 
         @keyframes twinkle {
-            0% { opacity: 0.2; transform: scale(1); }
-            100% { opacity: 1; transform: scale(1.5); }
+            0% {
+                opacity: 0.2;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
         }
 
         /* ===== HERO SECTION ===== */
@@ -53,18 +70,25 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
             background: radial-gradient(circle at 30% 50%, rgba(255, 0, 100, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 70% 50%, rgba(0, 200, 255, 0.12) 0%, transparent 50%),
-                        radial-gradient(circle at 50% 80%, rgba(255, 200, 0, 0.1) 0%, transparent 40%);
+                radial-gradient(circle at 70% 50%, rgba(0, 200, 255, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, rgba(255, 200, 0, 0.1) 0%, transparent 40%);
             animation: bgPulse 8s ease-in-out infinite alternate;
             z-index: -1;
         }
 
         @keyframes bgPulse {
-            0% { transform: rotate(0deg) scale(1); }
-            100% { transform: rotate(10deg) scale(1.1); }
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+
+            100% {
+                transform: rotate(10deg) scale(1.1);
+            }
         }
 
         .title-glow {
@@ -82,9 +106,17 @@
         }
 
         @keyframes rainbowShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .subtitle {
@@ -124,10 +156,24 @@
             box-shadow: 0 4px 20px rgba(255, 0, 106, 0.3);
         }
 
-        .badge.boost { border-color: #f47fff; color: #f47fff; }
-        .badge.nofollow { border-color: #888; }
-        .badge.nomoney { border-color: #ffaa00; color: #ffaa00; }
-        .badge.notbot { border-color: #00e0ff; color: #00e0ff; }
+        .badge.boost {
+            border-color: #f47fff;
+            color: #f47fff;
+        }
+
+        .badge.nofollow {
+            border-color: #888;
+        }
+
+        .badge.nomoney {
+            border-color: #ffaa00;
+            color: #ffaa00;
+        }
+
+        .badge.notbot {
+            border-color: #00e0ff;
+            color: #00e0ff;
+        }
 
         .scroll-indicator {
             position: absolute;
@@ -137,8 +183,15 @@
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
         }
 
         /* ===== STATS SECTION ===== */
@@ -165,7 +218,7 @@
         }
 
         .stat-card {
-            background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 20px;
             padding: 2rem 1.5rem;
@@ -239,7 +292,8 @@
         .photo-label {
             position: absolute;
             bottom: 0;
-            left: 0; right: 0;
+            left: 0;
+            right: 0;
             padding: 1.5rem;
             background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
             font-family: 'Bangers', cursive;
@@ -283,7 +337,8 @@
         .meme-quote::before {
             content: '"';
             position: absolute;
-            top: -10px; left: 15px;
+            top: -10px;
+            left: 15px;
             font-size: 4rem;
             color: rgba(255, 0, 106, 0.3);
             font-family: 'Bangers', cursive;
@@ -315,7 +370,9 @@
         .timeline::before {
             content: '';
             position: absolute;
-            left: 50%; top: 0; bottom: 0;
+            left: 50%;
+            top: 0;
+            bottom: 0;
             width: 2px;
             background: linear-gradient(to bottom, #ff006a, #00e0ff, #ffaa00);
         }
@@ -340,15 +397,21 @@
         .timeline-item::before {
             content: '';
             position: absolute;
-            width: 14px; height: 14px;
+            width: 14px;
+            height: 14px;
             background: #ff006a;
             border-radius: 50%;
             top: 2rem;
             box-shadow: 0 0 15px rgba(255, 0, 106, 0.5);
         }
 
-        .timeline-item:nth-child(odd)::before { left: -30px; }
-        .timeline-item:nth-child(even)::before { right: -30px; }
+        .timeline-item:nth-child(odd)::before {
+            left: -30px;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            right: -30px;
+        }
 
         .timeline-date {
             font-family: 'Bangers', cursive;
@@ -386,8 +449,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .verdict-text {
@@ -415,8 +483,15 @@
         }
 
         @keyframes floatUp {
-            0% { opacity: 1; transform: translateY(0) rotate(0deg); }
-            100% { opacity: 0; transform: translateY(-300px) rotate(720deg); }
+            0% {
+                opacity: 1;
+                transform: translateY(0) rotate(0deg);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-300px) rotate(720deg);
+            }
         }
 
         /* ===== MARQUEE ===== */
@@ -440,26 +515,36 @@
         }
 
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         /* ===== GLITCH EFFECT ===== */
         .glitch {
             position: relative;
         }
+
         .glitch::after,
         .glitch::before {
             content: attr(data-text);
             position: absolute;
-            left: 0; top: 0;
-            width: 100%; height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
         }
+
         .glitch::before {
             animation: glitch1 2s infinite;
             clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
             color: #ff006a;
         }
+
         .glitch::after {
             animation: glitch2 2s infinite;
             clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
@@ -467,201 +552,251 @@
         }
 
         @keyframes glitch1 {
-            0%, 90%, 100% { transform: translateX(0); }
-            92% { transform: translateX(5px); }
-            94% { transform: translateX(-5px); }
-            96% { transform: translateX(3px); }
+
+            0%,
+            90%,
+            100% {
+                transform: translateX(0);
+            }
+
+            92% {
+                transform: translateX(5px);
+            }
+
+            94% {
+                transform: translateX(-5px);
+            }
+
+            96% {
+                transform: translateX(3px);
+            }
         }
+
         @keyframes glitch2 {
-            0%, 88%, 100% { transform: translateX(0); }
-            90% { transform: translateX(-5px); }
-            93% { transform: translateX(5px); }
-            95% { transform: translateX(-3px); }
+
+            0%,
+            88%,
+            100% {
+                transform: translateX(0);
+            }
+
+            90% {
+                transform: translateX(-5px);
+            }
+
+            93% {
+                transform: translateX(5px);
+            }
+
+            95% {
+                transform: translateX(-3px);
+            }
         }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 600px) {
-            .timeline::before { left: 20px; }
-            .timeline-item { width: 80%; margin-left: 60px !important; text-align: left !important; }
-            .timeline-item::before { left: -48px !important; right: auto !important; }
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 80%;
+                margin-left: 60px !important;
+                text-align: left !important;
+            }
+
+            .timeline-item::before {
+                left: -48px !important;
+                right: auto !important;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<!-- STARS -->
-<div class="stars" id="stars"></div>
+    <!-- STARS -->
+    <div class="stars" id="stars"></div>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="title-glow glitch" data-text="VRIL JONG UN">VRIL JONG UN</div>
-    <p class="subtitle">aka <span>deckstro</span> — the supreme leader of Discord 🏆</p>
-    <div class="badge-row">
-        <span class="badge boost">🩷 Server Booster</span>
-        <span class="badge nofollow">👻 No Following Yet</span>
-        <span class="badge nomoney">💸 No Money Yet</span>
-        <span class="badge notbot">🤖 Not a bot</span>
-    </div>
-    <div class="scroll-indicator">⬇️</div>
-</section>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="title-glow glitch" data-text="VRIL JONG UN">VRIL JONG UN</div>
+        <p class="subtitle">aka <span>deckstro</span> — the supreme leader of Discord 🏆</p>
+        <div class="badge-row">
+            <span class="badge boost">🩷 Server Booster</span>
+            <span class="badge nofollow">👻 No Following Yet</span>
+            <span class="badge nomoney">💸 No Money Yet</span>
+            <span class="badge notbot">🤖 Not a bot</span>
+        </div>
+        <div class="scroll-indicator">⬇️</div>
+    </section>
 
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-    <div class="marquee-content">
-        🚀 VRIL JONG UN 🚀 DECKSTRO 🚀 SERVER BOOSTER 🚀 12,203 MESSAGES 🚀 NOT A BOT 🚀 SUPREME LEADER 🚀 NO MONEY YET 🚀 VRIL JONG UN 🚀 DECKSTRO 🚀 SERVER BOOSTER 🚀 12,203 MESSAGES 🚀 NOT A BOT 🚀 SUPREME LEADER 🚀 NO MONEY YET 🚀 VRIL JONG UN 🚀 DECKSTRO 🚀 SERVER BOOSTER 🚀 12,203 MESSAGES 🚀 NOT A BOT 🚀 SUPREME LEADER 🚀 NO MONEY YET 🚀
-    </div>
-</div>
-
-<!-- STATS -->
-<section class="stats-section">
-    <h2 class="section-title">📊 The Numbers Don't Lie</h2>
-    <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-number" id="msgCount">0</div>
-            <div class="stat-label">Messages Sent</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-number" id="linkCount">0</div>
-            <div class="stat-label">Links Shared</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-number" id="mediaCount">0</div>
-            <div class="stat-label">Media Posted</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Mod Permissions 💀</div>
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+        <div class="marquee-content">
+            🚀 VRIL JONG UN 🚀 DECKSTRO 🚀 SERVER BOOSTER 🚀 12,203 MESSAGES 🚀 NOT A BOT 🚀 SUPREME LEADER 🚀 NO MONEY
+            YET 🚀 VRIL JONG UN 🚀 DECKSTRO 🚀 SERVER BOOSTER 🚀 12,203 MESSAGES 🚀 NOT A BOT 🚀 SUPREME LEADER 🚀 NO
+            MONEY YET 🚀 VRIL JONG UN 🚀 DECKSTRO 🚀 SERVER BOOSTER 🚀 12,203 MESSAGES 🚀 NOT A BOT 🚀 SUPREME LEADER 🚀
+            NO MONEY YET 🚀
         </div>
     </div>
-</section>
 
-<!-- PHOTOS -->
-<section class="photos-section">
-    <h2 class="section-title">📸 THE EVIDENCE</h2>
-    <div class="photos-grid">
-        <div class="photo-card">
-            <img src="profile1.png" alt="Vril Jong Un Discord Profile">
-            <div class="photo-label">🔥 The Profile — do not disturb 🔥</div>
+    <!-- STATS -->
+    <section class="stats-section">
+        <h2 class="section-title">📊 The Numbers Don't Lie</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="msgCount">0</div>
+                <div class="stat-label">Messages Sent</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="linkCount">0</div>
+                <div class="stat-label">Links Shared</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="mediaCount">0</div>
+                <div class="stat-label">Media Posted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Mod Permissions 💀</div>
+            </div>
         </div>
-        <div class="photo-card">
-            <img src="profile2.png" alt="Vril Jong Un Mod View">
-            <div class="photo-label">🕵️ The Mod View — 12K msgs, 0 power 🕵️</div>
-        </div>
-        <div class="photo-card">
-            <img src="profile3.png" alt="Vril Jong Un Shh">
-            <div class="photo-label">🤫 The Shh — staying low profile 🤫</div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- MEME QUOTES -->
-<section class="quotes-section">
-    <h2 class="section-title">💬 Things People Say About Vril</h2>
-    <div class="meme-quotes">
-        <div class="meme-quote">
-            He sends 12,203 messages but has no mod permissions. That's not grinding, that's slavery. 😭
-            <span class="author">— Anonymous Server Member</span>
+    <!-- PHOTOS -->
+    <section class="photos-section">
+        <h2 class="section-title">📸 THE EVIDENCE</h2>
+        <div class="photos-grid">
+            <div class="photo-card">
+                <img src="profile1.png" alt="Vril Jong Un Discord Profile">
+                <div class="photo-label">🔥 The Profile — do not disturb 🔥</div>
+            </div>
+            <div class="photo-card">
+                <img src="profile2.png" alt="Vril Jong Un Mod View">
+                <div class="photo-label">🕵️ The Mod View — 12K msgs, 0 power 🕵️</div>
+            </div>
+            <div class="photo-card">
+                <img src="profile3.png" alt="Vril Jong Un Shh">
+                <div class="photo-label">🤫 The Shh — staying low profile 🤫</div>
+            </div>
+            <div class="photo-card">
+                <img src="https://media.giphy.com/media/MxPYXanRHjke7Cg5cL/giphy.gif" alt="Vril Jong Un Secret Archive">
+                <div class="photo-label">👽 LEAKED FOOTAGE — top secret 👽</div>
+            </div>
         </div>
-        <div class="meme-quote">
-            Bro boosted the server but still has "No Money Yet" role. The irony is immaculate. 💀
-            <span class="author">— The Role Manager</span>
-        </div>
-        <div class="meme-quote">
-            They're shy 👉👈 ...say hey to break the ice — Bro won't even show activity. True sigma. 🗿
-            <span class="author">— Discord's Algorithm</span>
-        </div>
-        <div class="meme-quote">
-            "Not a bot" — that's exactly what a bot would say 🤔
-            <span class="author">— Server Conspiracy Theorist</span>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- TIMELINE -->
-<section class="timeline-section">
-    <h2 class="section-title">⏳ The Vril Jong Un Timeline</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-date">28 Apr 2020</div>
-            <div class="timeline-text">Joined Discord. The world was never the same. 🌍</div>
+    <!-- MEME QUOTES -->
+    <section class="quotes-section">
+        <h2 class="section-title">💬 Things People Say About Vril</h2>
+        <div class="meme-quotes">
+            <div class="meme-quote">
+                He sends 12,203 messages but has no mod permissions. That's not grinding, that's slavery. 😭
+                <span class="author">— Anonymous Server Member</span>
+            </div>
+            <div class="meme-quote">
+                Bro boosted the server but still has "No Money Yet" role. The irony is immaculate. 💀
+                <span class="author">— The Role Manager</span>
+            </div>
+            <div class="meme-quote">
+                They're shy 👉👈 ...say hey to break the ice — Bro won't even show activity. True sigma. 🗿
+                <span class="author">— Discord's Algorithm</span>
+            </div>
+            <div class="meme-quote">
+                "Not a bot" — that's exactly what a bot would say 🤔
+                <span class="author">— Server Conspiracy Theorist</span>
+            </div>
         </div>
-        <div class="timeline-item">
-            <div class="timeline-date">2020–2024</div>
-            <div class="timeline-text">Sent 12,203 messages. Earned exactly 0 mod permissions. A true grinder with zero promotion. 💪</div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline-section">
+        <h2 class="section-title">⏳ The Vril Jong Un Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">28 Apr 2020</div>
+                <div class="timeline-text">Joined Discord. The world was never the same. 🌍</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2020–2024</div>
+                <div class="timeline-text">Sent 12,203 messages. Earned exactly 0 mod permissions. A true grinder with
+                    zero promotion. 💪</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">28 Jan 2025</div>
+                <div class="timeline-text">Joined the server. Immediately got 4 roles: all of them are roasts. 😂</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Now</div>
+                <div class="timeline-text">Still shy. Still no activity. Still boosting. Still a legend. 👑</div>
+            </div>
         </div>
-        <div class="timeline-item">
-            <div class="timeline-date">28 Jan 2025</div>
-            <div class="timeline-text">Joined the server. Immediately got 4 roles: all of them are roasts. 😂</div>
+    </section>
+
+    <!-- VERDICT -->
+    <section class="verdict-section">
+        <div class="verdict-box">
+            <div class="verdict-emoji">👑</div>
+            <div class="verdict-text">Verified Legend. Unmatched Grinder. Zero Power.</div>
+            <div class="verdict-sub">Passed Verification Level ✅ • Still waiting for mod • Send help</div>
         </div>
-        <div class="timeline-item">
-            <div class="timeline-date">Now</div>
-            <div class="timeline-text">Still shy. Still no activity. Still boosting. Still a legend. 👑</div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- VERDICT -->
-<section class="verdict-section">
-    <div class="verdict-box">
-        <div class="verdict-emoji">👑</div>
-        <div class="verdict-text">Verified Legend. Unmatched Grinder. Zero Power.</div>
-        <div class="verdict-sub">Passed Verification Level ✅ • Still waiting for mod • Send help</div>
-    </div>
-</section>
+    <script>
+        // ===== STARS =====
+        const starsEl = document.getElementById('stars');
+        for (let i = 0; i < 120; i++) {
+            const star = document.createElement('span');
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            star.style.width = star.style.height = (Math.random() * 2 + 1) + 'px';
+            starsEl.appendChild(star);
+        }
 
-<script>
-    // ===== STARS =====
-    const starsEl = document.getElementById('stars');
-    for (let i = 0; i < 120; i++) {
-        const star = document.createElement('span');
-        star.style.left = Math.random() * 100 + '%';
-        star.style.top = Math.random() * 100 + '%';
-        star.style.animationDelay = Math.random() * 3 + 's';
-        star.style.width = star.style.height = (Math.random() * 2 + 1) + 'px';
-        starsEl.appendChild(star);
-    }
+        // ===== COUNTER ANIMATION =====
+        function animateCounter(el, target) {
+            let current = 0;
+            const step = Math.ceil(target / 80);
+            const interval = setInterval(() => {
+                current += step;
+                if (current >= target) { current = target; clearInterval(interval); }
+                el.textContent = current.toLocaleString();
+            }, 20);
+        }
 
-    // ===== COUNTER ANIMATION =====
-    function animateCounter(el, target) {
-        let current = 0;
-        const step = Math.ceil(target / 80);
-        const interval = setInterval(() => {
-            current += step;
-            if (current >= target) { current = target; clearInterval(interval); }
-            el.textContent = current.toLocaleString();
-        }, 20);
-    }
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-            if (e.isIntersecting) {
-                animateCounter(document.getElementById('msgCount'), 12203);
-                animateCounter(document.getElementById('linkCount'), 1249);
-                animateCounter(document.getElementById('mediaCount'), 513);
-                observer.disconnect();
-            }
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    animateCounter(document.getElementById('msgCount'), 12203);
+                    animateCounter(document.getElementById('linkCount'), 1249);
+                    animateCounter(document.getElementById('mediaCount'), 513);
+                    observer.disconnect();
+                }
+            });
         });
-    });
-    observer.observe(document.querySelector('.stats-section'));
+        observer.observe(document.querySelector('.stats-section'));
 
-    // ===== FLOATING EMOJIS ON CLICK =====
-    const emojis = ['🚀', '💀', '😂', '🔥', '👑', '🗿', '💸', '🤖', '⚡', '🍆'];
-    document.addEventListener('click', (e) => {
-        const emoji = document.createElement('div');
-        emoji.className = 'float-emoji';
-        emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-        emoji.style.left = e.clientX + 'px';
-        emoji.style.top = e.clientY + 'px';
-        document.body.appendChild(emoji);
-        setTimeout(() => emoji.remove(), 3000);
-    });
+        // ===== FLOATING EMOJIS ON CLICK =====
+        const emojis = ['🚀', '💀', '😂', '🔥', '👑', '🗿', '💸', '🤖', '⚡', '🍆'];
+        document.addEventListener('click', (e) => {
+            const emoji = document.createElement('div');
+            emoji.className = 'float-emoji';
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = e.clientX + 'px';
+            emoji.style.top = e.clientY + 'px';
+            document.body.appendChild(emoji);
+            setTimeout(() => emoji.remove(), 3000);
+        });
 
-    // ===== PARALLAX ON SCROLL =====
-    document.addEventListener('scroll', () => {
-        const y = window.scrollY;
-        document.querySelector('.hero').style.backgroundPositionY = y * 0.3 + 'px';
-    });
-</script>
+        // ===== PARALLAX ON SCROLL =====
+        document.addEventListener('scroll', () => {
+            const y = window.scrollY;
+            document.querySelector('.hero').style.backgroundPositionY = y * 0.3 + 'px';
+        });
+    </script>
 
 </body>
+
 </html>
